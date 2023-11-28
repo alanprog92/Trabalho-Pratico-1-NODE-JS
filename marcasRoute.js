@@ -1,5 +1,7 @@
 import express from "express";
 import { finalResponseFormatter, mesmaQuatidadeDeModelos, sortMaisModelos, sortMenosModelos } from "./utils.js";
+import { promises } from "fs";
+const { readFile } = promises;
 
 const marcas = express.Router();
 
